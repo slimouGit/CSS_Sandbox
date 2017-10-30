@@ -1,0 +1,67 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name=description content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Grids</title>
+    <style>
+
+        body {
+            margin:0;
+        }
+
+        .container {
+            height:100vh;
+            display: grid;
+            grid-template-rows: 200px 1fr 100px;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+
+        header {
+            background:tomato;
+            grid-column-start:1;
+            grid-column-end:5;
+            grid-row-start:1;
+            grid-row-end:2;
+        }
+
+        article {
+            background:gold;
+            grid-column-start:1;
+            grid-column-end:4;
+            grid-row-start:2;
+            grid-row-end:3;
+        }
+
+        aside {
+            background:lightgreen;
+            grid-column-start:4;
+            grid-column-end:5;
+            grid-row-start:2;
+            grid-row-end:3;
+        }
+
+        footer {
+            background:lightblue;
+            grid-column-start:1;
+            grid-column-end:5;
+            grid-row-start:3;
+            grid-row-end:4;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <header>header</header>
+    <article>article</article>
+    <aside>aside</aside>
+    <footer>footer</footer>
+</div>
+
+</body>
+</html>
